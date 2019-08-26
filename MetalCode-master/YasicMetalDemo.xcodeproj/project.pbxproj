@@ -1,0 +1,858 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7401BEC122559213005A40F2 /* YMBasicOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7401BEC022559213005A40F2 /* YMBasicOperation.m */; };
+		7401BEC322559421005A40F2 /* YMStandardShaderFunctions.metal in Sources */ = {isa = PBXBuildFile; fileRef = 7401BEC222559421005A40F2 /* YMStandardShaderFunctions.metal */; };
+		74036C4B225EC51200AD1F63 /* YMSaturationOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 74036C4A225EC51200AD1F63 /* YMSaturationOperation.m */; };
+		74036C4D225EC52600AD1F63 /* YMSaturationShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 74036C4C225EC52600AD1F63 /* YMSaturationShader.metal */; };
+		74036C50225ECB6900AD1F63 /* YMBrightnessOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 74036C4F225ECB6900AD1F63 /* YMBrightnessOperation.m */; };
+		74036C52225ECB7A00AD1F63 /* YMBrightnessShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 74036C51225ECB7A00AD1F63 /* YMBrightnessShader.metal */; };
+		74036C55225ED19B00AD1F63 /* YMZoomBlurOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 74036C54225ED19B00AD1F63 /* YMZoomBlurOperation.m */; };
+		74036C57225ED20900AD1F63 /* YMZoomBlurShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 74036C56225ED20900AD1F63 /* YMZoomBlurShader.metal */; };
+		74036C5A225ED48E00AD1F63 /* YMToonOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 74036C59225ED48E00AD1F63 /* YMToonOperation.m */; };
+		74366F5A222E96C7004A8916 /* TextRenderPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 74366F59222E96C7004A8916 /* TextRenderPage.m */; };
+		74366F5D2230EF67004A8916 /* GlyphInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 74366F5C2230EF67004A8916 /* GlyphInfo.m */; };
+		7443F5DE225C2F1A00E6D125 /* YMTextureInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 7443F5DD225C2F1A00E6D125 /* YMTextureInput.m */; };
+		7443F5E2225C319F00E6D125 /* YMTextureOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 7443F5E1225C319F00E6D125 /* YMTextureOutput.m */; };
+		7443F5E6225C5A0700E6D125 /* YMBasicTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7443F5E5225C5A0700E6D125 /* YMBasicTool.m */; };
+		7443F5E9225CAE7C00E6D125 /* YMLUTFilterOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7443F5E8225CAE7C00E6D125 /* YMLUTFilterOperation.m */; };
+		745030A021B8AEB7000BB235 /* VertexDescrpitorPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7450309F21B8AEB7000BB235 /* VertexDescrpitorPage.m */; };
+		745030A221B8AFB0000BB235 /* VertexDescriptor.metal in Sources */ = {isa = PBXBuildFile; fileRef = 745030A121B8AFB0000BB235 /* VertexDescriptor.metal */; };
+		745030AA21B9FB56000BB235 /* SamplerDemoPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 745030A921B9FB56000BB235 /* SamplerDemoPage.m */; };
+		745030AC21BA0059000BB235 /* SamplerDemoShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 745030AB21BA0059000BB235 /* SamplerDemoShader.metal */; };
+		745030B021BA9D87000BB235 /* DepthStencilPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 745030AF21BA9D87000BB235 /* DepthStencilPage.m */; };
+		745030B221BBC602000BB235 /* DepthStencilShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 745030B121BBC602000BB235 /* DepthStencilShader.metal */; };
+		745ADD50215CCB90005CAC69 /* YMDImageLUTFilterPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 745ADD4F215CCB90005CAC69 /* YMDImageLUTFilterPage.m */; };
+		745ADD53215CCBAA005CAC69 /* YMDVideoLUTFilterPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 745ADD52215CCBAA005CAC69 /* YMDVideoLUTFilterPage.m */; };
+		745ADD57215CE0B4005CAC69 /* YMDFilterProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 745ADD56215CE0B4005CAC69 /* YMDFilterProcessor.m */; };
+		745ADD5B215CE31B005CAC69 /* ImageFilterShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 745ADD5A215CE31B005CAC69 /* ImageFilterShaders.metal */; };
+		745ADD62216B06A0005CAC69 /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 745ADD61216B069F005CAC69 /* video.mp4 */; };
+		7477B3B0225ED6E400BBA623 /* YMToonOperation.metal in Sources */ = {isa = PBXBuildFile; fileRef = 7477B3AF225ED6E400BBA623 /* YMToonOperation.metal */; };
+		7477B3BF225F657800BBA623 /* the_scream.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7477B3BB225F657800BBA623 /* the_scream.mlmodel */; };
+		7477B3C0225F657800BBA623 /* mosaic.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7477B3BC225F657800BBA623 /* mosaic.mlmodel */; };
+		7477B3C1225F657800BBA623 /* udnie.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7477B3BD225F657800BBA623 /* udnie.mlmodel */; };
+		7477B3C2225F657800BBA623 /* candy.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7477B3BE225F657800BBA623 /* candy.mlmodel */; };
+		7477B3C922601F6600BBA623 /* YMStylizeOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7477B3C822601F6600BBA623 /* YMStylizeOperation.m */; };
+		747BA33B225DD88E00CCD323 /* YMLUTFilterOperationShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 747BA33A225DD88D00CCD323 /* YMLUTFilterOperationShader.metal */; };
+		74A008092254CD1E004466D1 /* YMTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A008082254CD1E004466D1 /* YMTexture.m */; };
+		74A0080C2254CE1C004466D1 /* YMMetalContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A0080B2254CE1C004466D1 /* YMMetalContext.m */; };
+		74A0080F2254D26B004466D1 /* YMConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A0080E2254D26B004466D1 /* YMConstants.m */; };
+		74A108DD2251AB850096DB58 /* CAMetalLayerPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A108DC2251AB850096DB58 /* CAMetalLayerPage.m */; };
+		74A108E02251ABA10096DB58 /* CustomMetalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A108DF2251ABA10096DB58 /* CustomMetalView.m */; };
+		74A99F97215B38DB000881C3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A99F96215B38DB000881C3 /* AppDelegate.m */; };
+		74A99F9A215B38DB000881C3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A99F99215B38DB000881C3 /* ViewController.m */; };
+		74A99F9D215B38DB000881C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74A99F9B215B38DB000881C3 /* Main.storyboard */; };
+		74A99F9F215B38DC000881C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74A99F9E215B38DC000881C3 /* Assets.xcassets */; };
+		74A99FA2215B38DC000881C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74A99FA0215B38DC000881C3 /* LaunchScreen.storyboard */; };
+		74A99FA5215B38DC000881C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A99FA4215B38DC000881C3 /* main.m */; };
+		74B261A42180273000D83118 /* CubeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B261A32180273000D83118 /* CubeViewController.m */; };
+		74B261A62180521400D83118 /* CubeShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 74B261A52180521400D83118 /* CubeShaders.metal */; };
+		74F33BD92183370E000F28B2 /* YMDComputeKernelPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F33BD82183370E000F28B2 /* YMDComputeKernelPage.m */; };
+		74F33BDB218337B2000F28B2 /* ComputeKernel.metal in Sources */ = {isa = PBXBuildFile; fileRef = 74F33BDA218337B2000F28B2 /* ComputeKernel.metal */; };
+		74F33BDF2185F693000F28B2 /* YMDLightDemoPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F33BDE2185F693000F28B2 /* YMDLightDemoPage.m */; };
+		74F33BE12185F6E9000F28B2 /* LightKernel.metal in Sources */ = {isa = PBXBuildFile; fileRef = 74F33BE02185F6E9000F28B2 /* LightKernel.metal */; };
+		ECF69B02C516D217981B0E2D /* libPods-YasicMetalDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C0BF3B7AE62BFCC26FD2DD /* libPods-YasicMetalDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		07604BC25261B86780F13587 /* Pods-YasicMetalDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YasicMetalDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YasicMetalDemo/Pods-YasicMetalDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		342557A71E953499534F41CE /* Pods-YasicMetalDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YasicMetalDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-YasicMetalDemo/Pods-YasicMetalDemo.release.xcconfig"; sourceTree = "<group>"; };
+		68C0BF3B7AE62BFCC26FD2DD /* libPods-YasicMetalDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YasicMetalDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7401BEBF22559213005A40F2 /* YMBasicOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMBasicOperation.h; sourceTree = "<group>"; };
+		7401BEC022559213005A40F2 /* YMBasicOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMBasicOperation.m; sourceTree = "<group>"; };
+		7401BEC222559421005A40F2 /* YMStandardShaderFunctions.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = YMStandardShaderFunctions.metal; sourceTree = "<group>"; };
+		74036C49225EC51200AD1F63 /* YMSaturationOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMSaturationOperation.h; sourceTree = "<group>"; };
+		74036C4A225EC51200AD1F63 /* YMSaturationOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMSaturationOperation.m; sourceTree = "<group>"; };
+		74036C4C225EC52600AD1F63 /* YMSaturationShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = YMSaturationShader.metal; sourceTree = "<group>"; };
+		74036C4E225ECB6900AD1F63 /* YMBrightnessOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMBrightnessOperation.h; sourceTree = "<group>"; };
+		74036C4F225ECB6900AD1F63 /* YMBrightnessOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMBrightnessOperation.m; sourceTree = "<group>"; };
+		74036C51225ECB7A00AD1F63 /* YMBrightnessShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = YMBrightnessShader.metal; sourceTree = "<group>"; };
+		74036C53225ED19B00AD1F63 /* YMZoomBlurOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMZoomBlurOperation.h; sourceTree = "<group>"; };
+		74036C54225ED19B00AD1F63 /* YMZoomBlurOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMZoomBlurOperation.m; sourceTree = "<group>"; };
+		74036C56225ED20900AD1F63 /* YMZoomBlurShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = YMZoomBlurShader.metal; sourceTree = "<group>"; };
+		74036C58225ED48E00AD1F63 /* YMToonOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMToonOperation.h; sourceTree = "<group>"; };
+		74036C59225ED48E00AD1F63 /* YMToonOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMToonOperation.m; sourceTree = "<group>"; };
+		74366F58222E96C7004A8916 /* TextRenderPage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextRenderPage.h; sourceTree = "<group>"; };
+		74366F59222E96C7004A8916 /* TextRenderPage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextRenderPage.m; sourceTree = "<group>"; };
+		74366F5B2230EF67004A8916 /* GlyphInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlyphInfo.h; sourceTree = "<group>"; };
+		74366F5C2230EF67004A8916 /* GlyphInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlyphInfo.m; sourceTree = "<group>"; };
+		7443F5DC225C2F1A00E6D125 /* YMTextureInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMTextureInput.h; sourceTree = "<group>"; };
+		7443F5DD225C2F1A00E6D125 /* YMTextureInput.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMTextureInput.m; sourceTree = "<group>"; };
+		7443F5E0225C319F00E6D125 /* YMTextureOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMTextureOutput.h; sourceTree = "<group>"; };
+		7443F5E1225C319F00E6D125 /* YMTextureOutput.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMTextureOutput.m; sourceTree = "<group>"; };
+		7443F5E4225C5A0700E6D125 /* YMBasicTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMBasicTool.h; sourceTree = "<group>"; };
+		7443F5E5225C5A0700E6D125 /* YMBasicTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMBasicTool.m; sourceTree = "<group>"; };
+		7443F5E7225CAE7C00E6D125 /* YMLUTFilterOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMLUTFilterOperation.h; sourceTree = "<group>"; };
+		7443F5E8225CAE7C00E6D125 /* YMLUTFilterOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMLUTFilterOperation.m; sourceTree = "<group>"; };
+		7450309E21B8AEB7000BB235 /* VertexDescrpitorPage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VertexDescrpitorPage.h; sourceTree = "<group>"; };
+		7450309F21B8AEB7000BB235 /* VertexDescrpitorPage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VertexDescrpitorPage.m; sourceTree = "<group>"; };
+		745030A121B8AFB0000BB235 /* VertexDescriptor.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = VertexDescriptor.metal; sourceTree = "<group>"; };
+		745030A821B9FB56000BB235 /* SamplerDemoPage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SamplerDemoPage.h; sourceTree = "<group>"; };
+		745030A921B9FB56000BB235 /* SamplerDemoPage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SamplerDemoPage.m; sourceTree = "<group>"; };
+		745030AB21BA0059000BB235 /* SamplerDemoShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SamplerDemoShader.metal; sourceTree = "<group>"; };
+		745030AE21BA9D87000BB235 /* DepthStencilPage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DepthStencilPage.h; sourceTree = "<group>"; };
+		745030AF21BA9D87000BB235 /* DepthStencilPage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DepthStencilPage.m; sourceTree = "<group>"; };
+		745030B121BBC602000BB235 /* DepthStencilShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = DepthStencilShader.metal; sourceTree = "<group>"; };
+		745ADD4E215CCB90005CAC69 /* YMDImageLUTFilterPage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMDImageLUTFilterPage.h; sourceTree = "<group>"; };
+		745ADD4F215CCB90005CAC69 /* YMDImageLUTFilterPage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMDImageLUTFilterPage.m; sourceTree = "<group>"; };
+		745ADD51215CCBAA005CAC69 /* YMDVideoLUTFilterPage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMDVideoLUTFilterPage.h; sourceTree = "<group>"; };
+		745ADD52215CCBAA005CAC69 /* YMDVideoLUTFilterPage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMDVideoLUTFilterPage.m; sourceTree = "<group>"; };
+		745ADD54215CE024005CAC69 /* YMDMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMDMacros.h; sourceTree = "<group>"; };
+		745ADD55215CE0B4005CAC69 /* YMDFilterProcessor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMDFilterProcessor.h; sourceTree = "<group>"; };
+		745ADD56215CE0B4005CAC69 /* YMDFilterProcessor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMDFilterProcessor.m; sourceTree = "<group>"; };
+		745ADD5A215CE31B005CAC69 /* ImageFilterShaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = ImageFilterShaders.metal; sourceTree = "<group>"; };
+		745ADD61216B069F005CAC69 /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
+		7477B3AF225ED6E400BBA623 /* YMToonOperation.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = YMToonOperation.metal; sourceTree = "<group>"; };
+		7477B3B8225F5F1A00BBA623 /* YMMetalDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMMetalDefine.h; sourceTree = "<group>"; };
+		7477B3BB225F657800BBA623 /* the_scream.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = the_scream.mlmodel; sourceTree = "<group>"; };
+		7477B3BC225F657800BBA623 /* mosaic.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = mosaic.mlmodel; sourceTree = "<group>"; };
+		7477B3BD225F657800BBA623 /* udnie.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = udnie.mlmodel; sourceTree = "<group>"; };
+		7477B3BE225F657800BBA623 /* candy.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = candy.mlmodel; sourceTree = "<group>"; };
+		7477B3C722601F6600BBA623 /* YMStylizeOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMStylizeOperation.h; sourceTree = "<group>"; };
+		7477B3C822601F6600BBA623 /* YMStylizeOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMStylizeOperation.m; sourceTree = "<group>"; };
+		747BA33A225DD88D00CCD323 /* YMLUTFilterOperationShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = YMLUTFilterOperationShader.metal; sourceTree = "<group>"; };
+		74A008072254CD1E004466D1 /* YMTexture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMTexture.h; sourceTree = "<group>"; };
+		74A008082254CD1E004466D1 /* YMTexture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMTexture.m; sourceTree = "<group>"; };
+		74A0080A2254CE1C004466D1 /* YMMetalContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMMetalContext.h; sourceTree = "<group>"; };
+		74A0080B2254CE1C004466D1 /* YMMetalContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMMetalContext.m; sourceTree = "<group>"; };
+		74A0080D2254D26B004466D1 /* YMConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMConstants.h; sourceTree = "<group>"; };
+		74A0080E2254D26B004466D1 /* YMConstants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMConstants.m; sourceTree = "<group>"; };
+		74A0081122558DC4004466D1 /* YMPipeline.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMPipeline.h; sourceTree = "<group>"; };
+		74A108DB2251AB850096DB58 /* CAMetalLayerPage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAMetalLayerPage.h; sourceTree = "<group>"; };
+		74A108DC2251AB850096DB58 /* CAMetalLayerPage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAMetalLayerPage.m; sourceTree = "<group>"; };
+		74A108DE2251ABA10096DB58 /* CustomMetalView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomMetalView.h; sourceTree = "<group>"; };
+		74A108DF2251ABA10096DB58 /* CustomMetalView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomMetalView.m; sourceTree = "<group>"; };
+		74A99F92215B38DB000881C3 /* YasicMetalDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YasicMetalDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		74A99F95215B38DB000881C3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		74A99F96215B38DB000881C3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		74A99F98215B38DB000881C3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		74A99F99215B38DB000881C3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		74A99F9C215B38DB000881C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		74A99F9E215B38DC000881C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		74A99FA1215B38DC000881C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		74A99FA3215B38DC000881C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74A99FA4215B38DC000881C3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		74B261A22180273000D83118 /* CubeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CubeViewController.h; sourceTree = "<group>"; };
+		74B261A32180273000D83118 /* CubeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CubeViewController.m; sourceTree = "<group>"; };
+		74B261A52180521400D83118 /* CubeShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = CubeShaders.metal; sourceTree = "<group>"; };
+		74F33BD72183370E000F28B2 /* YMDComputeKernelPage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMDComputeKernelPage.h; sourceTree = "<group>"; };
+		74F33BD82183370E000F28B2 /* YMDComputeKernelPage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMDComputeKernelPage.m; sourceTree = "<group>"; };
+		74F33BDA218337B2000F28B2 /* ComputeKernel.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ComputeKernel.metal; sourceTree = "<group>"; };
+		74F33BDD2185F693000F28B2 /* YMDLightDemoPage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMDLightDemoPage.h; sourceTree = "<group>"; };
+		74F33BDE2185F693000F28B2 /* YMDLightDemoPage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMDLightDemoPage.m; sourceTree = "<group>"; };
+		74F33BE02185F6E9000F28B2 /* LightKernel.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = LightKernel.metal; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		74A99F8F215B38DB000881C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF69B02C516D217981B0E2D /* libPods-YasicMetalDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		74366F57222E969D004A8916 /* TextRenderPage */ = {
+			isa = PBXGroup;
+			children = (
+				74366F58222E96C7004A8916 /* TextRenderPage.h */,
+				74366F59222E96C7004A8916 /* TextRenderPage.m */,
+				74366F5B2230EF67004A8916 /* GlyphInfo.h */,
+				74366F5C2230EF67004A8916 /* GlyphInfo.m */,
+			);
+			path = TextRenderPage;
+			sourceTree = "<group>";
+		};
+		7443F5DB225C2EA900E6D125 /* Inputs */ = {
+			isa = PBXGroup;
+			children = (
+				7443F5DC225C2F1A00E6D125 /* YMTextureInput.h */,
+				7443F5DD225C2F1A00E6D125 /* YMTextureInput.m */,
+			);
+			path = Inputs;
+			sourceTree = "<group>";
+		};
+		7443F5DF225C318900E6D125 /* Outputs */ = {
+			isa = PBXGroup;
+			children = (
+				7443F5E0225C319F00E6D125 /* YMTextureOutput.h */,
+				7443F5E1225C319F00E6D125 /* YMTextureOutput.m */,
+			);
+			path = Outputs;
+			sourceTree = "<group>";
+		};
+		7443F5E3225C598B00E6D125 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				7477B3B8225F5F1A00BBA623 /* YMMetalDefine.h */,
+				7401BEBF22559213005A40F2 /* YMBasicOperation.h */,
+				7401BEC022559213005A40F2 /* YMBasicOperation.m */,
+				7443F5E7225CAE7C00E6D125 /* YMLUTFilterOperation.h */,
+				7443F5E8225CAE7C00E6D125 /* YMLUTFilterOperation.m */,
+				747BA33A225DD88D00CCD323 /* YMLUTFilterOperationShader.metal */,
+				74036C49225EC51200AD1F63 /* YMSaturationOperation.h */,
+				74036C4A225EC51200AD1F63 /* YMSaturationOperation.m */,
+				74036C4C225EC52600AD1F63 /* YMSaturationShader.metal */,
+				74036C4E225ECB6900AD1F63 /* YMBrightnessOperation.h */,
+				74036C4F225ECB6900AD1F63 /* YMBrightnessOperation.m */,
+				74036C51225ECB7A00AD1F63 /* YMBrightnessShader.metal */,
+				74036C53225ED19B00AD1F63 /* YMZoomBlurOperation.h */,
+				74036C54225ED19B00AD1F63 /* YMZoomBlurOperation.m */,
+				74036C56225ED20900AD1F63 /* YMZoomBlurShader.metal */,
+				74036C58225ED48E00AD1F63 /* YMToonOperation.h */,
+				74036C59225ED48E00AD1F63 /* YMToonOperation.m */,
+				7477B3AF225ED6E400BBA623 /* YMToonOperation.metal */,
+				7477B3C722601F6600BBA623 /* YMStylizeOperation.h */,
+				7477B3C822601F6600BBA623 /* YMStylizeOperation.m */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		7450309D21B8ADE5000BB235 /* VertexDescriptor */ = {
+			isa = PBXGroup;
+			children = (
+				7450309E21B8AEB7000BB235 /* VertexDescrpitorPage.h */,
+				7450309F21B8AEB7000BB235 /* VertexDescrpitorPage.m */,
+			);
+			path = VertexDescriptor;
+			sourceTree = "<group>";
+		};
+		745030A721B9FB3F000BB235 /* SamplerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				745030A821B9FB56000BB235 /* SamplerDemoPage.h */,
+				745030A921B9FB56000BB235 /* SamplerDemoPage.m */,
+			);
+			path = SamplerDemo;
+			sourceTree = "<group>";
+		};
+		745030AD21BA9D2F000BB235 /* DepthStencilPage */ = {
+			isa = PBXGroup;
+			children = (
+				745030AE21BA9D87000BB235 /* DepthStencilPage.h */,
+				745030AF21BA9D87000BB235 /* DepthStencilPage.m */,
+			);
+			path = DepthStencilPage;
+			sourceTree = "<group>";
+		};
+		745ADD48215CCB2D005CAC69 /* LUTFilter */ = {
+			isa = PBXGroup;
+			children = (
+				745ADD49215CCB2D005CAC69 /* Page */,
+				745ADD4A215CCB2D005CAC69 /* Util */,
+			);
+			path = LUTFilter;
+			sourceTree = "<group>";
+		};
+		745ADD49215CCB2D005CAC69 /* Page */ = {
+			isa = PBXGroup;
+			children = (
+				745ADD4E215CCB90005CAC69 /* YMDImageLUTFilterPage.h */,
+				745ADD4F215CCB90005CAC69 /* YMDImageLUTFilterPage.m */,
+				745ADD51215CCBAA005CAC69 /* YMDVideoLUTFilterPage.h */,
+				745ADD52215CCBAA005CAC69 /* YMDVideoLUTFilterPage.m */,
+			);
+			path = Page;
+			sourceTree = "<group>";
+		};
+		745ADD4A215CCB2D005CAC69 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				745ADD55215CE0B4005CAC69 /* YMDFilterProcessor.h */,
+				745ADD56215CE0B4005CAC69 /* YMDFilterProcessor.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		745ADD58215CE31B005CAC69 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				745ADD61216B069F005CAC69 /* video.mp4 */,
+				745ADD59215CE31B005CAC69 /* MetalShader */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		745ADD59215CE31B005CAC69 /* MetalShader */ = {
+			isa = PBXGroup;
+			children = (
+				745ADD5A215CE31B005CAC69 /* ImageFilterShaders.metal */,
+				74B261A52180521400D83118 /* CubeShaders.metal */,
+				74F33BDA218337B2000F28B2 /* ComputeKernel.metal */,
+				74F33BE02185F6E9000F28B2 /* LightKernel.metal */,
+				745030A121B8AFB0000BB235 /* VertexDescriptor.metal */,
+				745030AB21BA0059000BB235 /* SamplerDemoShader.metal */,
+				745030B121BBC602000BB235 /* DepthStencilShader.metal */,
+			);
+			path = MetalShader;
+			sourceTree = "<group>";
+		};
+		7477B3BA225F657800BBA623 /* TrainedModels */ = {
+			isa = PBXGroup;
+			children = (
+				7477B3BB225F657800BBA623 /* the_scream.mlmodel */,
+				7477B3BC225F657800BBA623 /* mosaic.mlmodel */,
+				7477B3BD225F657800BBA623 /* udnie.mlmodel */,
+				7477B3BE225F657800BBA623 /* candy.mlmodel */,
+			);
+			path = TrainedModels;
+			sourceTree = "<group>";
+		};
+		74A008052254CC9C004466D1 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				7443F5E3225C598B00E6D125 /* Operations */,
+				7443F5DF225C318900E6D125 /* Outputs */,
+				7443F5DB225C2EA900E6D125 /* Inputs */,
+				74A008062254CCA5004466D1 /* Basic */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		74A008062254CCA5004466D1 /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				74A0081022558D77004466D1 /* Pipeline */,
+				74A008072254CD1E004466D1 /* YMTexture.h */,
+				74A008082254CD1E004466D1 /* YMTexture.m */,
+				74A0080A2254CE1C004466D1 /* YMMetalContext.h */,
+				74A0080B2254CE1C004466D1 /* YMMetalContext.m */,
+				74A0080D2254D26B004466D1 /* YMConstants.h */,
+				74A0080E2254D26B004466D1 /* YMConstants.m */,
+				7443F5E4225C5A0700E6D125 /* YMBasicTool.h */,
+				7443F5E5225C5A0700E6D125 /* YMBasicTool.m */,
+			);
+			path = Basic;
+			sourceTree = "<group>";
+		};
+		74A0081022558D77004466D1 /* Pipeline */ = {
+			isa = PBXGroup;
+			children = (
+				74A0081122558DC4004466D1 /* YMPipeline.h */,
+				7401BEC222559421005A40F2 /* YMStandardShaderFunctions.metal */,
+			);
+			path = Pipeline;
+			sourceTree = "<group>";
+		};
+		74A108DA2251AB530096DB58 /* CAMetalLayerPage */ = {
+			isa = PBXGroup;
+			children = (
+				74A108DB2251AB850096DB58 /* CAMetalLayerPage.h */,
+				74A108DC2251AB850096DB58 /* CAMetalLayerPage.m */,
+				74A108DE2251ABA10096DB58 /* CustomMetalView.h */,
+				74A108DF2251ABA10096DB58 /* CustomMetalView.m */,
+			);
+			path = CAMetalLayerPage;
+			sourceTree = "<group>";
+		};
+		74A99F89215B38DB000881C3 = {
+			isa = PBXGroup;
+			children = (
+				74A99F94215B38DB000881C3 /* YasicMetalDemo */,
+				74A99F93215B38DB000881C3 /* Products */,
+				E22E7C57E99DD03EB646701D /* Pods */,
+				9FBC659E1D3EFAF5D8B47835 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		74A99F93215B38DB000881C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				74A99F92215B38DB000881C3 /* YasicMetalDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		74A99F94215B38DB000881C3 /* YasicMetalDemo */ = {
+			isa = PBXGroup;
+			children = (
+				7477B3BA225F657800BBA623 /* TrainedModels */,
+				74A008052254CC9C004466D1 /* Core */,
+				74A108DA2251AB530096DB58 /* CAMetalLayerPage */,
+				74366F57222E969D004A8916 /* TextRenderPage */,
+				745030AD21BA9D2F000BB235 /* DepthStencilPage */,
+				745030A721B9FB3F000BB235 /* SamplerDemo */,
+				7450309D21B8ADE5000BB235 /* VertexDescriptor */,
+				74F33BDC2185F67C000F28B2 /* Light */,
+				74F33BD6218336C4000F28B2 /* Compute */,
+				74B261A1218026D600D83118 /* ImageCube */,
+				745ADD58215CE31B005CAC69 /* Resource */,
+				745ADD48215CCB2D005CAC69 /* LUTFilter */,
+				74A99F95215B38DB000881C3 /* AppDelegate.h */,
+				74A99F96215B38DB000881C3 /* AppDelegate.m */,
+				74A99F98215B38DB000881C3 /* ViewController.h */,
+				74A99F99215B38DB000881C3 /* ViewController.m */,
+				74A99F9B215B38DB000881C3 /* Main.storyboard */,
+				74A99F9E215B38DC000881C3 /* Assets.xcassets */,
+				74A99FA0215B38DC000881C3 /* LaunchScreen.storyboard */,
+				74A99FA3215B38DC000881C3 /* Info.plist */,
+				74A99FA4215B38DC000881C3 /* main.m */,
+				745ADD54215CE024005CAC69 /* YMDMacros.h */,
+			);
+			path = YasicMetalDemo;
+			sourceTree = "<group>";
+		};
+		74B261A1218026D600D83118 /* ImageCube */ = {
+			isa = PBXGroup;
+			children = (
+				74B261A22180273000D83118 /* CubeViewController.h */,
+				74B261A32180273000D83118 /* CubeViewController.m */,
+			);
+			path = ImageCube;
+			sourceTree = "<group>";
+		};
+		74F33BD6218336C4000F28B2 /* Compute */ = {
+			isa = PBXGroup;
+			children = (
+				74F33BD72183370E000F28B2 /* YMDComputeKernelPage.h */,
+				74F33BD82183370E000F28B2 /* YMDComputeKernelPage.m */,
+			);
+			path = Compute;
+			sourceTree = "<group>";
+		};
+		74F33BDC2185F67C000F28B2 /* Light */ = {
+			isa = PBXGroup;
+			children = (
+				74F33BDD2185F693000F28B2 /* YMDLightDemoPage.h */,
+				74F33BDE2185F693000F28B2 /* YMDLightDemoPage.m */,
+			);
+			path = Light;
+			sourceTree = "<group>";
+		};
+		9FBC659E1D3EFAF5D8B47835 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68C0BF3B7AE62BFCC26FD2DD /* libPods-YasicMetalDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E22E7C57E99DD03EB646701D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				07604BC25261B86780F13587 /* Pods-YasicMetalDemo.debug.xcconfig */,
+				342557A71E953499534F41CE /* Pods-YasicMetalDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		74A99F91215B38DB000881C3 /* YasicMetalDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74A99FA8215B38DC000881C3 /* Build configuration list for PBXNativeTarget "YasicMetalDemo" */;
+			buildPhases = (
+				BDBB7C2824C50AA03C339310 /* [CP] Check Pods Manifest.lock */,
+				74A99F8E215B38DB000881C3 /* Sources */,
+				74A99F8F215B38DB000881C3 /* Frameworks */,
+				74A99F90215B38DB000881C3 /* Resources */,
+				364C3592A27D14CAEEEA912B /* [CP] Embed Pods Frameworks */,
+				C3AE21862839E61AA34547A7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YasicMetalDemo;
+			productName = YasicMetalDemo;
+			productReference = 74A99F92215B38DB000881C3 /* YasicMetalDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		74A99F8A215B38DB000881C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = yasic;
+				TargetAttributes = {
+					74A99F91215B38DB000881C3 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 74A99F8D215B38DB000881C3 /* Build configuration list for PBXProject "YasicMetalDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 74A99F89215B38DB000881C3;
+			productRefGroup = 74A99F93215B38DB000881C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				74A99F91215B38DB000881C3 /* YasicMetalDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		74A99F90215B38DB000881C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74A99FA2215B38DC000881C3 /* LaunchScreen.storyboard in Resources */,
+				74A99F9F215B38DC000881C3 /* Assets.xcassets in Resources */,
+				745ADD62216B06A0005CAC69 /* video.mp4 in Resources */,
+				74A99F9D215B38DB000881C3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		364C3592A27D14CAEEEA912B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YasicMetalDemo/Pods-YasicMetalDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDBB7C2824C50AA03C339310 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C3AE21862839E61AA34547A7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YasicMetalDemo/Pods-YasicMetalDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		74A99F8E215B38DB000881C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74A99F9A215B38DB000881C3 /* ViewController.m in Sources */,
+				747BA33B225DD88E00CCD323 /* YMLUTFilterOperationShader.metal in Sources */,
+				74036C50225ECB6900AD1F63 /* YMBrightnessOperation.m in Sources */,
+				74A0080F2254D26B004466D1 /* YMConstants.m in Sources */,
+				7477B3C922601F6600BBA623 /* YMStylizeOperation.m in Sources */,
+				7477B3C2225F657800BBA623 /* candy.mlmodel in Sources */,
+				74F33BDF2185F693000F28B2 /* YMDLightDemoPage.m in Sources */,
+				7477B3B0225ED6E400BBA623 /* YMToonOperation.metal in Sources */,
+				7443F5E9225CAE7C00E6D125 /* YMLUTFilterOperation.m in Sources */,
+				745030AA21B9FB56000BB235 /* SamplerDemoPage.m in Sources */,
+				745030AC21BA0059000BB235 /* SamplerDemoShader.metal in Sources */,
+				74B261A62180521400D83118 /* CubeShaders.metal in Sources */,
+				74036C52225ECB7A00AD1F63 /* YMBrightnessShader.metal in Sources */,
+				74A108E02251ABA10096DB58 /* CustomMetalView.m in Sources */,
+				7443F5DE225C2F1A00E6D125 /* YMTextureInput.m in Sources */,
+				74036C57225ED20900AD1F63 /* YMZoomBlurShader.metal in Sources */,
+				745ADD5B215CE31B005CAC69 /* ImageFilterShaders.metal in Sources */,
+				74036C55225ED19B00AD1F63 /* YMZoomBlurOperation.m in Sources */,
+				745ADD53215CCBAA005CAC69 /* YMDVideoLUTFilterPage.m in Sources */,
+				745030A021B8AEB7000BB235 /* VertexDescrpitorPage.m in Sources */,
+				74F33BD92183370E000F28B2 /* YMDComputeKernelPage.m in Sources */,
+				745030B221BBC602000BB235 /* DepthStencilShader.metal in Sources */,
+				74A0080C2254CE1C004466D1 /* YMMetalContext.m in Sources */,
+				7443F5E2225C319F00E6D125 /* YMTextureOutput.m in Sources */,
+				74A99FA5215B38DC000881C3 /* main.m in Sources */,
+				74F33BDB218337B2000F28B2 /* ComputeKernel.metal in Sources */,
+				74A008092254CD1E004466D1 /* YMTexture.m in Sources */,
+				745ADD57215CE0B4005CAC69 /* YMDFilterProcessor.m in Sources */,
+				7443F5E6225C5A0700E6D125 /* YMBasicTool.m in Sources */,
+				745030A221B8AFB0000BB235 /* VertexDescriptor.metal in Sources */,
+				74A99F97215B38DB000881C3 /* AppDelegate.m in Sources */,
+				7477B3C0225F657800BBA623 /* mosaic.mlmodel in Sources */,
+				7477B3C1225F657800BBA623 /* udnie.mlmodel in Sources */,
+				74B261A42180273000D83118 /* CubeViewController.m in Sources */,
+				74366F5D2230EF67004A8916 /* GlyphInfo.m in Sources */,
+				7477B3BF225F657800BBA623 /* the_scream.mlmodel in Sources */,
+				745030B021BA9D87000BB235 /* DepthStencilPage.m in Sources */,
+				74366F5A222E96C7004A8916 /* TextRenderPage.m in Sources */,
+				7401BEC122559213005A40F2 /* YMBasicOperation.m in Sources */,
+				745ADD50215CCB90005CAC69 /* YMDImageLUTFilterPage.m in Sources */,
+				74F33BE12185F6E9000F28B2 /* LightKernel.metal in Sources */,
+				74036C5A225ED48E00AD1F63 /* YMToonOperation.m in Sources */,
+				74036C4D225EC52600AD1F63 /* YMSaturationShader.metal in Sources */,
+				74036C4B225EC51200AD1F63 /* YMSaturationOperation.m in Sources */,
+				74A108DD2251AB850096DB58 /* CAMetalLayerPage.m in Sources */,
+				7401BEC322559421005A40F2 /* YMStandardShaderFunctions.metal in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		74A99F9B215B38DB000881C3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74A99F9C215B38DB000881C3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		74A99FA0215B38DC000881C3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74A99FA1215B38DC000881C3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		74A99FA6215B38DC000881C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		74A99FA7215B38DC000881C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		74A99FA9215B38DC000881C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07604BC25261B86780F13587 /* Pods-YasicMetalDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WY956BMK34;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/ReactiveObjC\"",
+				);
+				INFOPLIST_FILE = YasicMetalDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Masonry\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/ReactiveObjC\"",
+				);
+				MTL_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/YasicMetalDemo/Core/Operations";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"Masonry\"",
+					"-l\"ReactiveObjC\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"UIKit\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = developer.technology.MetalDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		74A99FAA215B38DC000881C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 342557A71E953499534F41CE /* Pods-YasicMetalDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WY956BMK34;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/ReactiveObjC\"",
+				);
+				INFOPLIST_FILE = YasicMetalDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/YasicMetalDemo/Core/Operations";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"Masonry\"",
+					"-l\"ReactiveObjC\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"UIKit\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = developer.technology.MetalDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		74A99F8D215B38DB000881C3 /* Build configuration list for PBXProject "YasicMetalDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74A99FA6215B38DC000881C3 /* Debug */,
+				74A99FA7215B38DC000881C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74A99FA8215B38DC000881C3 /* Build configuration list for PBXNativeTarget "YasicMetalDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74A99FA9215B38DC000881C3 /* Debug */,
+				74A99FAA215B38DC000881C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 74A99F8A215B38DB000881C3 /* Project object */;
+}
